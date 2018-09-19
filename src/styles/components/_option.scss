@@ -1,0 +1,14 @@
+.option {
+    border-bottom: .1rem solid white;
+    padding: $l-size $l-size;
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+        color: white;
+        font-weight: 500;
+        font-size: 2rem;
+        margin: 0;
+        word-break: break-all;
+    }
+}

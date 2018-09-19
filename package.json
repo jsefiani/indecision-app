@@ -1,0 +1,45 @@
+{
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jawad Sefiani",
+  "homepage": "https://jsefiani.github.io/indecision-app",
+  "license": "MIT",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public",
+    "dev": "webpack-dev-server --mode development",
+    "clean": "rimraf public",
+    "build": "npm run clean && webpack -p --mode production"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-modal": "^2.2.2",
+    "rimraf": "^2.6.2",
+    "url-loader": "^1.1.1",
+    "validator": "8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "gh-pages": "^1.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.3.1",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
